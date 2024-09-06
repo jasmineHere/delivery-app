@@ -1,0 +1,37 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"description": "Node Backend For Project book my dine",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.25.0",
+		"bcrypt": "^5.0.1",
+		"body-parser": "^1.19.1",
+		"cookie-parser": "^1.4.6",
+		"cors": "^2.8.5",
+		"dayjs": "^1.10.7",
+		"dotenv": "^15.0.0",
+		"ejs": "^3.1.6",
+		"express": "^4.17.2",
+		"formidable": "^2.0.1",
+		"html-pdf": "^3.0.1",
+		"html-pdf-node": "^1.0.8",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.1.9",
+		"mongoose-paginate-v2": "^1.6.1",
+		"multer": "^1.4.4",
+		"node-fetch": "^3.2.0",
+		"nodemailer": "^6.7.3",
+		"stripe": "^8.199.0",
+		"uuid": "^8.3.2",
+		"validatorjs": "^3.22.1"
+	}
+}

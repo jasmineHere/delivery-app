@@ -1,0 +1,201 @@
+
+user create :
+    Admin - privet 
+    resturants - public - create resturant profile
+    customer - public - main 
+    delivery - join as delivery person
+
+customer profile :
+    name: profileImage
+    address List
+    Order History
+    Fav Items / resturant
+    Given Reviews
+
+restaurant Profile :
+    name:
+    description:
+    Cuisines:
+    logo:
+    coverImage:
+    imagesList:
+    address:
+    location: lat and long
+    owner_name:
+
+each restaurant Menu:
+    Categories:
+        name:
+        items:
+            veg:
+            name:
+            image:
+            service Size:
+            price:
+            description:
+        modifications:
+            size:
+                name:
+                price:
+
+delivery person:
+    location:
+    profileImage:
+    name:
+    phone:
+    address:
+
+cart: 
+
+order and checkout
+
+admin side of BMD:
+    all users
+    all delivery
+    all restaurant
+    all orders
+    all Reviews  
+    all reservationsm
+    all payments
+
+admin side of restaurant
+    get's all orders active, sent today
+    all incomes
+    all delivery person waits
+    all earnings and withrawl
+
+admin side of delivery person:
+    active orders
+    new order requests
+    
+
+Pages:
+    Home 
+        -> this will show some images from nearst restaurants and top rated restaurants
+        -> this will have links for Login, Signup, restaurant create Profile, Delivery Person Join
+        -> will have big search bar for restaurants, dishes
+        -> will have two main big section buttons that goes to food order or reservation page
+    Login 
+        -> this will have login form ( works for all users )
+    Signup 
+        -> this will have signup form ( works for customer ) 
+    restaurant create Profile 
+        -> this will have restaurant create profile form ( works for restaurant )
+    Delivery Person Join 
+        -> this will have delivery person join form ( works for delivery person )
+    Food Order 
+        -> requires Login Of customer account
+        -> this will have search bar for restaurants, dishes
+        -> will have nearby resturants shown in a list
+        -> can click on any resturant to see its menu
+        -> can also search for an item which will show nearby resturants that sell them. 
+        -> can click the item to go to the resturant menu 
+    Food Order / resturants 
+        -> search menu 
+        -> Categories on side
+        -> click add button to add item to cart
+        -> if item has modification then open a modal to add modification , sizes
+        -> show the cart on bottom
+    cart
+        -> show the cart on bottom
+        -> edit the cart by clicking on the item and modification options edit
+        -> click on remove button to remove item from cart
+        -> click on checkout button to checkout
+    order and checkout
+        -> payment intergration and finial prize and offer adding
+    order track page
+        -> shows stages of order
+        -> information about the order
+        -> information about delivery person
+        -> live location of the delivery person
+    Reservation -> requires Login Of customer account
+        -> search by time and other areas like location and distance
+        -> click on the restaurant to see it's reservation profile
+        -> select person count and time slot
+        -> You can see if there are any available seats
+        -> click on reserve button to reserve
+    reservation / checkout ->
+        -> payment intergration and finial prize and offer adding
+        -> reservation status and cancelation options
+    reservation / track -> 
+        -> shows the status of reservation 
+        -> you can see the code of reservation here which you need to give to restaurant to confirm
+    
+    CUSTOMER:
+    Profile_page:
+        -> edit profile
+        -> edit address
+        -> all reviews that customer has put ( allowed to delete them)
+    Order_history:
+        -> all orders that customer has made
+    Fav_items:
+        -> all items that customer has added to fav
+    Reservation Histroy:
+        -> all reservations that customer has made
+    
+    Restaurant_admin:
+    Profile_page:
+        -> edit personal profile
+        -> edit public details ( name changes etc. )
+        -> edit menu
+        -> edit images
+    orders:
+        -> all orders that restaurant has in line ( so these are that resturant accepted )
+        -> all the orders that are to be accepted
+        -> pas orders
+    order_details:
+        -> show the order details
+        -> customer details
+        -> delivery details ( person who will deliver )
+    statustics
+        -> graphs of orders
+        -> graphs of earnings
+    earnings:
+        -> all earnings that restaurant has made
+        -> all withdrawls that restaurant has made
+    invoices:
+        -> all invoices that restaurant has issued
+    
+    Delivery_person:
+    Profile_page:
+        -> edit details
+    orders:
+        -> currently assigned delivery Task
+        -> all orders that delivery person has made
+    earnings:
+        -> all earnings that delivery person has made
+    withdraw:
+        -> withdraw money from account
+
+    Super Admin:
+    One account only
+    restaurants/
+        list all resturants with search and sort
+        /:resturants_name
+            profile
+            menu
+            past and active order details
+            can cancle any current orders
+            issue refund to that order
+            cancle resturants profile
+            manage reviews ( delete )
+            earnings
+            withdraw
+            invoices
+            reported problems
+    delivery_persons:
+        all persons ( live location and order assginment)
+            :/person_id
+                complains
+                profile
+                orders
+                earnings
+                withdraw
+                cancle profile
+    customer:
+        view profiles
+        get order details
+        order history
+    statustics:
+        graphs of earnings and orders
+    
